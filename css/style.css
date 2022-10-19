@@ -1,0 +1,156 @@
+/* General Rules */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.container{
+    width: 100%;
+}
+
+/* Nav Rules */
+
+.nav{
+    background-color: black;
+    width: 20%;
+}
+
+.spotify .logo{
+    padding: 25px 100px 0px 20px;
+    width: 100%;
+    /* DEBUG */
+}
+
+.content ul li{
+    list-style-type: none;
+    font-size: 20px;
+    margin: 15px 0 0 15px;
+    color: grey;
+}
+
+i{
+    color: grey;
+}
+
+h4{
+    font-size: 15px;
+    display: inline;
+    color: grey;
+}
+
+#specialone{
+    color: grey;
+    margin-left: 10px;
+}
+
+#specialtwo{
+    color: white;
+    text-align: center;
+}
+
+h3{
+    padding: 25px 100px 20px 15px;
+    font-size: 15px;
+    color: grey;
+}
+
+.crea.playlist{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    /* DEBUG */
+    /* background-color: yellow; */
+}
+
+.nome.playlist{
+    overflow-x: scroll;
+    /* DEBUG */
+    background-color: yellow;
+
+}
+
+.nome.playlist ul li{
+    list-style-type: none;
+    font-size: 15px;
+    margin: 10px;
+    color: grey;
+    /* DEBUG */
+    /* background-color: yellow; */
+}
+
+span{
+    font-size: 50px;
+    color: grey;
+}
+
+.installa.app{
+    /* position: fixed;
+    z-index: 100;
+    left: 0;
+    bottom: 0%; */
+    margin-bottom: 100px;
+    padding-left: 10px;
+    width: auto;
+    /* DEBUG */
+    background-color: blue;
+}
+
+hr{
+
+    width: 90%;
+    margin: 20px auto;
+}
+
+.fa-solid.fa-circle-user{
+    font-size: 25px;
+    color: white;
+}
+
+/* Main Container */
+
+.top{
+    z-index: 100;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    /* DEBUG */
+    background-color: blue;
+} 
+
+.middle{
+    margin-bottom: 100px;
+    width: 100%;
+    height: calc(100vh - 100px);
+    /* DEBUG */
+    background-color: red;
+}
+
+/* Footer Rules */
+
+.bottom{
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    /* DEBUG */
+    background-color: yellow;
+}
