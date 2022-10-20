@@ -17,7 +17,7 @@ body{
 
 .flex-container{
     display: flex;
-    /* max-width: 1600px; */
+    max-width: 1400px;
 }
 
 .container{
@@ -32,6 +32,7 @@ body{
     z-index: 100;
     background-color: black;
     width: 30%;
+    height: 100vh;
 }
 
 /* Spotify Logo */
@@ -240,13 +241,14 @@ h1{
 
 .bottom .left{
     display: flex;
-    width: 25%;
+    justify-content: flex-start;
+    width: 30%;
     /* background-color: red; */
 }
 
 .left .sinister{
-    padding-left: 10px;
-    width: 20%;
+    padding-left: 5px;
+    width: 50px;
     align-self: center;
 }
 
@@ -257,33 +259,34 @@ h1{
 
 .left ul #top{
     color: white;
-    font-size: 15px;
+    font-size: 12px;
     padding-top: 35px;
 }
 
 .left ul #bottom{
     color: grey;
-    font-size: 12px;
+    font-size: 10px;
+    padding-right: 5px;
 }
 
-.icons{
+.iconsleft{
     display: flex;
     align-items: center;
     color: grey;
-    padding-left:25px;
 }
 
 #folder, #heart{
     color: grey;
-    padding-left: 20px;
+    padding-left: 0;
 }
+
 
 /* Footer Middle */
 
 .bottom .middle{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     /* background-color: yellow; */
 }
 
@@ -291,15 +294,13 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100%;
-    height: 50%;
     /* DEBUG */
-    /* background-color: red; */
+    /* background-color: green; */
 }
 
 .bar,li{
     color: white;
-    padding: 15px;
+    padding: 10px;
     display: flex;
 }
 
@@ -315,25 +316,40 @@ h1{
 
 .load #barwhite{
     color: white;
-    width: 10%;
+    width: 50px;
 }
 
 .load #bargrey{
     color: grey;
-    width: 30%;
+    width: 200px;
 }
+
+/* Footer Right */
 
 .bottom .right{
-    width: 25%;
-    background-color: blue;
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    /* DEBUG */
+    /* background-color: blue; */
 }
 
+.iconsright{
+    display: flex;
+    align-items: center;
+    color: grey;
+}
 
+#barwhiteright{
+    color: white;
+    width: 10px;
+}
 
-
-
-
-
+#bargreyright{
+    margin-right: 5px;
+    color: grey;
+    width: 30px;
+}
 
 
 /* Medium Version*/
@@ -352,6 +368,15 @@ h1{
         font-size: 13px;
     }
 
+    /* Footer */
+    
+    #top, #bottom{
+        padding: 0 0 0 5px;
+    }
+
+    .iconsleft{
+        padding-left:5px;
+    } 
 }
 
 /* Medium Tablet*/
@@ -362,10 +387,16 @@ h1{
     .nav{
         width: 100%;
     }
+
+
 }
 
 /* Mobile Tablet*/
 @media screen and (max-width:541px){
+
+    .iconsleft{
+        flex-direction: column;
+    }
 }
 
 
@@ -417,5 +448,10 @@ h1{
     .fa-solid.fa-circle-user{
         font-size: 20px;
     }
-    
+
+    /* Footer */
+    .bottom .right{
+        justify-content: flex-start;
+    }
+
 }   
