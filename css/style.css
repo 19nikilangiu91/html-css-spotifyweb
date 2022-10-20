@@ -17,10 +17,11 @@ body{
 
 .flex-container{
     display: flex;
+    /* max-width: 1600px; */
 }
 
 .container{
-    max-width: 1600px;
+    width: 100%;
 }
 
 /* Nav Rules */
@@ -70,8 +71,7 @@ h4{
 
 /* Playlist Items */
 
-.playlist{
-    width: 100%;
+.playlist{  
     /* DEBUG */
     /* background-color: yellow; */
 }
@@ -114,7 +114,6 @@ h4{
     padding: 10px 0 10px 10px;
     width: 21%;
     background-color: black;
-    /* DEBUG */
 }
 
 .fa-regular.fa-circle-down,
@@ -139,7 +138,6 @@ hr{
 .container.main{
     margin: 100px auto;
     width: 100%;
-    height: 100%;
     /* DEBUG */
     background-color: rgba(0, 0, 0, 0.8)
 }
@@ -187,9 +185,47 @@ a{
     color: grey;
 }
 
+.container.album{
+    display: flex;
+    background-color: green;
+    width: 100%;
+    margin: 5px;
+}
+
+.square{
+    margin: 10px;
+    width: calc((100% / 6) - 10px);
+
+    /* DEBUG */
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.square img{
+    width: 100%;
+}
+
+h1{
+    width: 30%;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+}
+
+.titlone{
+    color: white;
+    text-align: center;
+}
+
+.undertitle{
+    color: grey;
+    text-align: center;
+}
 /* Footer Rules */
 
 .bottom{
+    display: flex;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -198,6 +234,98 @@ a{
     height: 100px;
     /* DEBUG */
     background-color: #1b1b1b;
+}
+
+/* Footer Left */
+
+.bottom .left{
+    display: flex;
+    width: 25%;
+    /* background-color: red; */
+}
+
+.left .sinister{
+    padding-left: 10px;
+    width: 20%;
+    align-self: center;
+}
+
+#top, #bottom{
+    padding: 0 0 0 10px;
+    list-style-type: none;
+}
+
+.left ul #top{
+    color: white;
+    font-size: 15px;
+    padding-top: 35px;
+}
+
+.left ul #bottom{
+    color: grey;
+    font-size: 12px;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    color: grey;
+    padding-left:25px;
+}
+
+#folder, #heart{
+    color: grey;
+    padding-left: 20px;
+}
+
+/* Footer Middle */
+
+.bottom .middle{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* background-color: yellow; */
+}
+
+.middle .footerone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 50%;
+    /* DEBUG */
+    /* background-color: red; */
+}
+
+.bar,li{
+    color: white;
+    padding: 15px;
+    display: flex;
+}
+
+.footertwo .load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 50%;
+    /* DEBUG */
+    /* background-color: green; */
+}
+
+.load #barwhite{
+    color: white;
+    width: 10%;
+}
+
+.load #bargrey{
+    color: grey;
+    width: 30%;
+}
+
+.bottom .right{
+    width: 25%;
+    background-color: blue;
 }
 
 
