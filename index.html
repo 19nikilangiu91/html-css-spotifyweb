@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <title>SpotifyWeb</title>
 </head>
 <body>
@@ -27,19 +28,23 @@
 
                 <div class="content">
                     <ul>
-                        <li>
+                        <li class="yellow">
                             <img id="svg" src="./img/home.svg" alt="home logo">
-                            <span>Home</span>
-                           
+                            <a href="#">
+                                <span>Home</span>
+                            </a>
                         </li>
-                        <li>
+                        <li class="yellow">
                             <img id="svg" src="./img/search.svg" alt="search logo">
-                            <span>Cerca</span>
+                            <a href="#">
+                                <span>Cerca</span>
+                            </a>
                         </li>
-                        <li>
+                        <li class="yellow">
                             <img id="svg" src="./img/libreria.svg" alt="search logo">
-                            <span>La tua Libreria</span>
-                            
+                            <a href="#">
+                                <span>La tua Libreria</span>
+                            </a>
                         </li>
                     </ul>
                     
@@ -50,17 +55,19 @@
                             <span id="specialtwo">Crea Playlist</span>
                         </a>
                         <div class="nome playlist">
-                            <ul>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
+                            <ul class>
+                                <a href="#">
+                                    <li>Nome Playlist</li>
+                                    <li>Nome Playlist</li>
+                                    <li>Nome Playlist</li>
+                                    <li>Nome Playlist</li>
+                                    <li>Nome Playlist</li>
+                                    <li>Nome Playlist</li>
+                                    <li>Nome Playlist</li>
+                                    <li>Nome Playlist</li>
+                                    <li>Nome Playlist</li>
+                                    <li>Nome Playlist</li>
+                                </a>
                             </ul>
                         </div>
                     </div>
@@ -97,6 +104,9 @@
                     <div class="container album">
                         <div class="square">
                             <img src="./img/metal_lifting.jpg" alt="Metal album">
+                            <span id="playbutton">
+                                <li><i class="fa-solid fa-play"></i></li>
+                            </span>
                             <h2 class="titlone">Heavy Metal</h2>
                             <h3 class="undertitle">Subtitle</h3>
                         </div>
@@ -181,8 +191,12 @@
                     <li id="bottom">Brano Nome</li>
                 </ul>
                 <ul class="iconsleft">
-                    <li id="heart"><i class="fa-regular fa-heart"></i></li>
-                    <li id="folder"><i class="fa-regular fa-folder"></i></li>
+                    <a href="#">
+                        <li id="heart"><i class="fa-regular fa-heart"></i></li>
+                    </a>
+                    <a href="#">
+                        <li id="folder"><i class="fa-regular fa-folder"></i></li>
+                    </a>
                 </ul>
             </div>
 

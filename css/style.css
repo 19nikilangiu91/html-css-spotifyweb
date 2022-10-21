@@ -53,9 +53,9 @@ body{
 
 /* Nav Items */
 
-.content ul li{
-
+.content ul .yellow{
     display: flex;
+    align-items: center;
     list-style-type: none;
     font-size: 15px;
     padding: 15px 0 0 15px;
@@ -64,10 +64,27 @@ body{
     /* background-color: red; */
 }
 
-span{
+.content ul .yellow:hover{
+    transition: 1sec;
+    color: white;
+    border-left: 2px solid greenyellow;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+a span{
+    margin-top: 5px;
     padding: 10px 0 0 10px;
     font-size: 15px;
     color: grey;
+}
+
+a span:hover{
+    transform: 1sec;
+    color: white;
 }
 
 #svg{
@@ -75,15 +92,14 @@ span{
 }
 
 #svgtwo{
-    padding-left: 5px;
-    width: 8%;
+    padding-left: 10px;
+    width: 10%;
 }
 
 
 /* Playlist Items */
 
 .playlist{  
-    overflow: hidden;
     max-height: 100%;
     /* DEBUG */
     /* background-color: yellow; */
@@ -95,7 +111,7 @@ span{
 }
 
 .fa-sharp.fa-solid.fa-square-plus{
-    font-size: 20px;
+    font-size: 40px;
     padding-left: 10px;
     color: grey;
 }
@@ -106,7 +122,7 @@ span{
 }
 
 #specialtwo{
-    font-size: 10px;
+    font-size: 15px;
     display: inline-block;
     color: grey;
     padding: 5px;                   
@@ -128,6 +144,7 @@ span{
 .nome.playlist ul li:hover{
     transition: 1sec;
     color: white;
+
 }
 
 /* Installa App Items */
@@ -196,6 +213,12 @@ hr{
     /* margin:100px ; */
 }
 
+#button:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    padding: 10px 25px;
+}
+
 .main.tool ul{
     display: flex;
     flex-wrap: wrap;
@@ -214,6 +237,12 @@ hr{
     color: grey;
 }
 
+.main.tool ul li:hover{
+    transition: 1sec;
+    color: white;
+    border-bottom: 2px solid greenyellow;
+}
+
 .container.album{
     display: flex;
     width: 100%;
@@ -224,11 +253,12 @@ hr{
 }
 
 .square{
+    position: relative;
     margin: 10px;
     width: calc((100% / 6) - 10px);
 
     /* DEBUG */
-    /* background-color: yellow; */
+    /* background-color: green; */
     /* border: 1px solid black; */
 }
 
@@ -239,6 +269,15 @@ hr{
 .square img{
     width: 100%;
 }
+
+#playbutton{
+    position: absolute;
+    /* top: 36%;
+    left: 27.5%; */
+    z-index: 100;
+    /* background-color: black; */
+}
+
 
 h1{
     width: 60%;
@@ -322,6 +361,16 @@ h1{
     padding-left: 5px;
 }
 
+#folder:hover{
+    transition: 1sec;
+    color: white;
+}
+
+#heart:hover{
+    transition: 1sec;
+    color: white;
+}
+
 
 /* Footer Middle */
 
@@ -338,6 +387,19 @@ h1{
     align-items: center;
     /* DEBUG */
     /* background-color: green; */
+}
+
+.fa-solid.fa-play{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: -10px 3px 0 3px;
+}
+
+.fa-solid.fa-play:hover{
+    transition: 1s;
+    transform: scale(1);
+    padding: 12px;
 }
 
 .bar,li{
@@ -357,13 +419,21 @@ h1{
 }
 
 .load #barwhite{
+    margin: 0;
     color: white;
     width: 50px;
 }
 
+.load #barwhite:hover{
+    transition: width 2s;
+    color:greenyellow;
+    width: 100px;
+}
+
 .load #bargrey{
+    margin: 0;
     color: grey;
-    width: 200px;
+    width: 100px;
 }
 
 /* Footer Right */
@@ -383,12 +453,19 @@ h1{
 }
 
 #barwhiteright{
+    margin: 0;
     color: white;
-    width: 10px;
+    width: 20px;
+}
+
+#barwhiteright:hover{
+    transition: width 2s;
+    color:greenyellow;
+    width: 40px;
 }
 
 #bargreyright{
-    margin-right: 5px;
+    margin: 0 10px 0 0;
     color: grey;
     width: 30px;
 }
@@ -508,13 +585,14 @@ h1{
     }
 
     #svg{
+
         width: 200px;
         color: red;
     
     }
     #svgtwo{
-        margin-left: 10px;
-        width: 80%;
+        margin-left: 5px;
+        width: 100%;
         color: red;
     }
 
