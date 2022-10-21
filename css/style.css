@@ -253,14 +253,18 @@ hr{
 }
 
 .square{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     position: relative;
     margin: 10px;
     width: calc((100% / 6) - 10px);
-
     /* DEBUG */
     /* background-color: green; */
     /* border: 1px solid black; */
 }
+
 
 .square.circle img{
     border-radius: 50%;
@@ -268,16 +272,27 @@ hr{
 
 .square img{
     width: 100%;
+    z-index: 1;
 }
 
 #playbutton{
     position: absolute;
-    /* top: 36%;
-    left: 27.5%; */
-    z-index: 100;
+    top: 50px;
+    animation: none;
+    /* display: none; */
+    z-index: 0;
+
     /* background-color: black; */
 }
 
+.square img:hover{
+    filter: opacity(50%);
+    z-index: 0;
+}
+
+.square img:hover #playbutton:hover{
+    z-index: 1;
+}
 
 h1{
     width: 60%;
@@ -288,6 +303,7 @@ h1{
 }
 
 .titlone{
+    margin-top: 10px;
     color: white;
     text-align: center;
     font-size: 12px;
